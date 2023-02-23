@@ -1,4 +1,7 @@
 import { useState } from "react"
+import datepicker from 'js-datepicker'
+
+const picker = datepicker('#date')
 
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState('')
@@ -28,7 +31,7 @@ const AddTask = ({ onAdd }) => {
         </div>
         <div className='form-control'>
             <label>Day&Time</label>
-            <input type="text" placeholder='Add Day&Time' value={day} onChange={(e) => setDay(e.target.value)} />
+            <input id="date" type="date" placeholder='Select Day&Time' value={day} onChange={(e) => setDay(e.target.value)} onClick={picker} />
         </div>
         <div className='form-control form-control-check'>
             <label>Set Reminder</label>
