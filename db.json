@@ -1,16 +1,3 @@
 {
-  "tasks": [
-    {
-      "text": "LAS VEGAS",
-      "day": "1/8/23",
-      "reminder": true,
-      "id": 3
-    },
-    {
-      "text": "Bring lunch",
-      "day": "Everyday",
-      "reminder": true,
-      "id": 4
-    }
-  ]
+  "tasks": []
 }
